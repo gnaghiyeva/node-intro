@@ -32,7 +32,7 @@ const AddProduct = () => {
         validationSchema: FormValidation
     })
   return (
-    <form onSubmit={(e)=>handleSubmit(e)}>
+    <form onSubmit={(e)=>handleSubmit(e)} style={{display:'flex', justifyContent:"center", alignItems:'center'}}>
     <TextField name='productName' onChange={(e)=>handleChange(e)} id="standard-basic"  variant="standard" placeholder='productName' type='text' />
     <TextField name='brandName' onChange={(e)=>handleChange(e)} id="standard-basic"  variant="standard" placeholder='brandName' type='text'/>
     <TextField name='price' onChange={(e)=>handleChange(e)} id="standard-basic"  variant="standard" placeholder='price' type='number'/>
